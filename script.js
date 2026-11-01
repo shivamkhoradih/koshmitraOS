@@ -95,5 +95,38 @@
       window.open('https://wa.me/918756891890?text=' + encodeURIComponent(msg), '_blank', 'noopener');
     });
   }
+
+  /* language switcher: English text is in the page; other languages load from lang-xx.js on demand */
+  var sel = $('#lang');
+  if (sel) {
+    var OK = { en: 1, hi: 1, mr: 1, bn: 1 }, FONT = { hi: 'Noto+Sans+Devanagari', mr: 'Noto+Sans+Devanagari', bn: 'Noto+Sans+Bengali' };
+    var nodes = $$('[data-i18n]'); nodes.forEach(function (n) { n._en = n.textContent; });
+    var dm = $('meta[name="description"]'), t0 = document.title, d0 = dm && dm.getAttribute('content');
+    function put(code) {
+      var d = (window.KM_LANG || {})[code] || {}, en = code === 'en';
+      nodes.forEach(function (n) { var v = d[n.getAttribute('data-i18n')]; n.textContent = (!en && v) ? v : n._en; });
+      document.title = (!en && d._title) || t0;
+      if (dm) dm.setAttribute('content', (!en && d._desc) || d0);
+      document.documentElement.lang = code; sel.value = code;
+    }
+    function setLang(code) {
+      if (!OK[code]) code = 'en';
+      try { localStorage.setItem('km_lang', code); } catch (e) {}
+      if (code === 'en') { put('en'); return; }
+      if (FONT[code] && !document.getElementById('font-' + code)) {
+        var l = document.createElement('link'); l.id = 'font-' + code; l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=' + FONT[code] + ':wght@400;500;600;700&display=swap'; document.head.appendChild(l);
+      }
+      if (window.KM_LANG && window.KM_LANG[code]) { put(code); return; }
+      var s = document.createElement('script'); s.src = 'lang-' + code + '.js';
+      s.onload = function () { put(code); }; s.onerror = function () { put('en'); }; document.head.appendChild(s);
+    }
+    sel.addEventListener('change', function () { setLang(sel.value); });
+    var q = (location.search.match(/[?&]lang=([a-z]{2})/) || [])[1], saved = null;
+    try { saved = localStorage.getItem('km_lang'); } catch (e) {}
+    var nl = (navigator.language || '').slice(0, 2).toLowerCase();
+    var start = q || saved || (OK[nl] ? nl : 'en');
+    if (start !== 'en') setLang(start);
+  }
   var y = $('#yr'); if (y) y.textContent = new Date().getFullYear();
 })();
