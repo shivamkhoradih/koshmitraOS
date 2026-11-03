@@ -1,5 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.koshmitra.online/</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.koshmitra.online/about.html</loc><lastmod>2026-11-02</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.koshmitra.online/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/en/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/mr/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/bn/</loc><lastmod>2026-11-02</lastmod><priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/about.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/about.html"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/en/about.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/about.html"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/mr/about.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/about.html"/>
+  </url>
+  <url><loc>https://www.koshmitra.online/bn/about.html</loc><lastmod>2026-11-02</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://www.koshmitra.online/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.koshmitra.online/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="mr" href="https://www.koshmitra.online/mr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://www.koshmitra.online/bn/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.koshmitra.online/about.html"/>
+  </url>
 </urlset>
