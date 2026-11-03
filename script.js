@@ -104,5 +104,13 @@
       location.href = (c === 'hi' ? '/' : '/' + c + '/') + (about ? 'about.html' : '');
     });
   }
+  /* pricing tabs */
+  var pt = $$('.ptab');
+  pt.forEach(function (t) {
+    t.addEventListener('click', function () {
+      pt.forEach(function (x) { x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      $$('.pp').forEach(function (p) { p.hidden = p.id !== t.getAttribute('aria-controls'); });
+    });
+  });
   var y = $('#yr'); if (y) y.textContent = new Date().getFullYear();
 })();
